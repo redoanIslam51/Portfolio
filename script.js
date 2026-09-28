@@ -14,13 +14,28 @@ themeButton.addEventListener("click", function () {
     document.body.classList.toggle("dark");
 
     if (document.body.classList.contains("dark")) {
+
         themeButton.textContent = "☀️";
+        localStorage.setItem("theme", "dark");
+
     } else {
+
         themeButton.textContent = "🌙";
+        localStorage.setItem("theme", "light");
+
     }
 
 });
 
+
+// Remember the selected theme after refreshing
+
+if (localStorage.getItem("theme") === "dark") {
+
+    document.body.classList.add("dark");
+    themeButton.textContent = "☀️";
+
+}
 
 // Mobile Menu
 
