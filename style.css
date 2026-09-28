@@ -388,3 +388,22 @@ body.dark .project-card span {
         margin-top: 10px;
     }
 }
+/* Final responsive improvement */
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .hero {
+        padding: 30px 15px;
+    }
+
+    .section {
+        padding: 60px 15px;
+    }
+}
